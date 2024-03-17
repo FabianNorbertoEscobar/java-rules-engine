@@ -1,0 +1,37 @@
+Configuration:
+  status: error
+
+  Appenders:
+    Console:
+
+      - name: JSON_LAYOUT_APPENDER
+        target: SYSTEM_OUT
+        JSONLayout:
+          compact: true
+          complete: false
+          objectMessageAsJsonObject: true
+
+      - name: CONSOLE_ROOT
+        target: SYSTEM_OUT
+        PatternLayout:
+          alwaysWriteExceptions: true
+          pattern: "DATETIME=[%d{yyyy-MM-dd HH:mm:ss.SSS}] LEVEL=[%level] CORRELATIONID=[%X{correlationId}] - %message{nolookups} %ex{separator(|)} %n"
+
+    File:
+      - name: FILE_APPENDER
+        filename: c:\TestLog\log.log
+        PatternLayout:
+          pattern: "DATETIME=[%d{yyyy-MM-dd HH:mm:ss.SSS}] LEVEL=[%level] CORRELATIONID=[%X{correlationId}] - %message{nolookups} %ex{separator(|)} %n"
+
+  Loggers:
+    logger:
+      - name: LOGGER_WITH_JSON_LAYOUT
+        level: debug
+        additivity: false
+        AppenderRef:
+          ref: JSON_LAYOUT_APPENDER
+
+    Root:
+      level: info
+      AppenderRef:
+        ref: CONSOLE_ROOT
