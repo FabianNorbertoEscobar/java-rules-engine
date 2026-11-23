@@ -1,4 +1,4 @@
-package ar.com.ib.rule.engine;
+package com.example.rules.engine;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -12,9 +12,9 @@ import java.util.function.Consumer;
 
 import org.junit.jupiter.api.Test;
 
-import ar.com.ib.rule.engine.exception.RuleException;
-import ar.com.ib.rule.engine.rules.RuleDos;
-import ar.com.ib.rule.engine.rules.RuleUno;
+import com.example.rules.engine.exception.RuleException;
+import com.example.rules.engine.rules.RuleDos;
+import com.example.rules.engine.rules.RuleUno;
 
 class RuleValidatorTest {
 
