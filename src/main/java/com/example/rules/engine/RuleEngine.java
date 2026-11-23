@@ -1,13 +1,13 @@
-package ar.com.ib.rule.engine;
+package com.example.rules.engine;
 
-import static ar.com.ib.rule.engine.log.LogManager.loggerWithCustomLayout;
+import static com.example.rules.engine.log.LogManager.loggerWithCustomLayout;
 import static java.lang.Boolean.FALSE;
 
 import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import ar.com.ib.rule.engine.exception.RuleEngineException;
+import com.example.rules.engine.exception.RuleEngineException;
 
 public class RuleEngine {
 

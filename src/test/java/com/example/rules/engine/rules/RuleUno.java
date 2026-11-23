@@ -1,6 +1,6 @@
-package ar.com.ib.rule.engine.rules;
+package com.example.rules.engine.rules;
 
-import ar.com.ib.rule.engine.IRule;
+import com.example.rules.engine.IRule;
 
 public class RuleUno implements IRule {
 

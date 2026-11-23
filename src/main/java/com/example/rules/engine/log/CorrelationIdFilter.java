@@ -1,5 +1,5 @@
-package ar.com.ib.rule.engine.log;
-import static ar.com.ib.rule.engine.log.LogManager.loggerWithCustomLayout;
+package com.example.rules.engine.log;
+import static com.example.rules.engine.log.LogManager.loggerWithCustomLayout;
 
 import java.io.IOException;
 import java.util.UUID;

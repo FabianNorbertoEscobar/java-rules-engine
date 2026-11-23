@@ -1,4 +1,4 @@
-package ar.com.ib.rule.engine.log;
+package com.example.rules.engine.log;
 
 import org.apache.logging.log4j.Logger;
 

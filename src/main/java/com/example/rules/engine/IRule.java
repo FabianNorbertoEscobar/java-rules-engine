@@ -1,4 +1,4 @@
-package ar.com.ib.rule.engine;
+package com.example.rules.engine;
 
 public interface IRule {
 

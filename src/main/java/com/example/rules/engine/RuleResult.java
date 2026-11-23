@@ -1,17 +1,17 @@
-package ar.com.ib.rule.engine;
+package com.example.rules.engine;
 
-import static ar.com.ib.rule.engine.RuleEngine.evaluate;
+import static com.example.rules.engine.RuleEngine.evaluate;
 import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
-import static ar.com.ib.rule.engine.log.LogManager.loggerWithCustomLayout;
+import static com.example.rules.engine.log.LogManager.loggerWithCustomLayout;
 
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import ar.com.ib.rule.engine.exception.RuleEngineException;
-import ar.com.ib.rule.engine.exception.RuleException;
+import com.example.rules.engine.exception.RuleEngineException;
+import com.example.rules.engine.exception.RuleException;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

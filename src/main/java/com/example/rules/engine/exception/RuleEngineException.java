@@ -1,7 +1,7 @@
-package ar.com.ib.rule.engine.exception;
+package com.example.rules.engine.exception;
 
-import static ar.com.ib.rule.engine.log.LogManager.loggerWithCustomLayout;
-import static ar.com.ib.rule.engine.log.LogManager.loggerWithJsonLayout;
+import static com.example.rules.engine.log.LogManager.loggerWithCustomLayout;
+import static com.example.rules.engine.log.LogManager.loggerWithJsonLayout;
 
 public class RuleEngineException extends RuntimeException {
 
